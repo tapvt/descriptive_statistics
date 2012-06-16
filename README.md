@@ -4,13 +4,12 @@ Descriptive Statistics [![Build Status](https://secure.travis-ci.org/FGRibreau/d
 Overview
 --------
 
- This module adds methods to the Array prototype to allow easy calculation of basic descriptive statistics.
- This is a fork of [descriptive_statistics](https://github.com/thirtysixthspan/descriptive_statistics) for Ruby by Derrick Parkhurst.
+ This module adds methods to the array prototype to allow easy calculation of basic descriptive statistics. This is a fork of the original ruby version [descriptive_statistics](https://github.com/thirtysixthspan/descriptive_statistics) by Derrick Parkhurst.
 
 Examples
 --------
 ```
-> require('./index');
+> require('descriptive-statistics');
 {}
 > data = [2,6,9,3,5,1,8,3,6,9,2]
 [ 2, 6, 9, 3, 5, 1, 8, 3, 6, 9, 2 ]
