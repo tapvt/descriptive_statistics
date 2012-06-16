@@ -1,37 +1,39 @@
 Descriptive Statistics
-===============
+======================
 
 Overview
 --------
 
- This gem adds methods to the Enumerable module to allow easy calculation of basic descriptive statistics.
+ This module adds methods to the Array prototype to allow easy calculation of basic descriptive statistics.
+ This is a fork of [descriptive_statistics](https://github.com/thirtysixthspan/descriptive_statistics) for Ruby by Derrick Parkhurst.
 
 Examples
 --------
 ```
-> require 'descriptive_statistics'
- => true 
+> require('./index');
+{}
 > data = [2,6,9,3,5,1,8,3,6,9,2]
- => [2, 6, 9, 3, 5, 1, 8, 3, 6, 9, 2] 
+[ 2, 6, 9, 3, 5, 1, 8, 3, 6, 9, 2 ]
 > data.number
- => 11.0 
+11
 > data.sum
- => 54 
+54
 > data.mean
- => 4.909090909090909 
+4.909090909090909
 > data.median
- => 5.0 
+5
 > data.variance
- => 7.7190082644628095 
+7.7190082644628095
 > data.standard_deviation
- => 2.778310325442932 
+2.778310325442932
 > data.percentile(70)
- => 6.0 
+6
 ```
+
 
 License
 -------
-Copyright (c) 2012 Derrick Parkhurst (derrick.parkhurst@gmail.com)
+Copyright (c) 2012 Francois-Guillaume Ribreau (npm@fgribreau.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -50,4 +52,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-

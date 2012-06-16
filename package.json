@@ -1,0 +1,23 @@
+{
+  "author": "Francois-Guillaume Ribreau <npm@fgribreau.com> (http://twitter.com/FGRibreau)",
+  "name": "descriptive-statistics",
+  "description": "Descriptive statistics for server-side JavaScript",
+  "version": "0.0.1",
+  "homepage": "https://github.com/FGRibreau/descriptive_statistics",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/FGRibreau/descriptive_statistics.git"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "test": "./node_modules/nodeunit/bin/nodeunit test/*.js"
+  },
+  "dependencies": {
+    "nodeunit": "~0.7.4"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
