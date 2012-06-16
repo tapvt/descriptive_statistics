@@ -6,6 +6,11 @@ Overview
 
  This module adds methods to the array prototype to allow easy calculation of basic descriptive statistics. This is a fork of the original ruby version [descriptive_statistics](https://github.com/thirtysixthspan/descriptive_statistics) by Derrick Parkhurst.
 
+Installation
+------------
+
+  npm install descriptive-statistics
+
 Examples
 --------
 ```
