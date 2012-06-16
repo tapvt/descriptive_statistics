@@ -10,7 +10,7 @@
   },
   "main": "./index.js",
   "scripts": {
-    "test": "./node_modules/nodeunit/bin/nodeunit test/*.js"
+    "test": "node node_modules/nodeunit/bin/nodeunit test/*.js"
   },
   "dependencies": {
   },
