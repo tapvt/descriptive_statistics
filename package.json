@@ -2,6 +2,7 @@
   "author": "Francois-Guillaume Ribreau <npm@fgribreau.com> (http://twitter.com/FGRibreau)",
   "name": "descriptive-statistics",
   "description": "Descriptive statistics for server-side JavaScript",
+  "keywords": ["statistics","stats"],
   "version": "0.0.2",
   "homepage": "https://github.com/FGRibreau/descriptive_statistics",
   "repository": {
