@@ -9,7 +9,9 @@ Overview
 Installation
 ------------
 
-    npm install descriptive-statistics
+```bash
+npm install descriptive-statistics
+```
 
 Examples
 --------
