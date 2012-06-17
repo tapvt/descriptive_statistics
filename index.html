@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Descriptive statistics by FGRibreau</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Descriptive statistics</h1>
+        <p>A port of the ruby Descriptive Statistics gem to JavaScript</p>
+        <p class="view"><a href="https://github.com/FGRibreau/descriptive_statistics">View the Project on GitHub <small>FGRibreau/descriptive_statistics</small></a></p>
+        <ul>
+          <li><a href="https://github.com/FGRibreau/descriptive_statistics/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/FGRibreau/descriptive_statistics/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/FGRibreau/descriptive_statistics">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Descriptive Statistics <a href="http://travis-ci.org/FGRibreau/descriptive_statistics"><img src="https://secure.travis-ci.org/FGRibreau/descriptive_statistics.png" alt="Build Status"></a>
+</h1>
+
+<h2>Overview</h2>
+
+<p>This module adds methods to the array prototype to allow easy calculation of basic descriptive statistics. This is a fork of the original ruby version <a href="https://github.com/thirtysixthspan/descriptive_statistics">descriptive_statistics</a> by Derrick Parkhurst.</p>
+
+<h2>Installation</h2>
+
+<div class="highlight">
+<pre>npm install descriptive-statistics
+</pre>
+</div>
+
+
+<h2>Examples</h2>
+
+<pre><code>&gt; require('descriptive-statistics');
+{}
+&gt; data = [2,6,9,3,5,1,8,3,6,9,2]
+[ 2, 6, 9, 3, 5, 1, 8, 3, 6, 9, 2 ]
+&gt; data.number
+11
+&gt; data.sum
+54
+&gt; data.mean
+4.909090909090909
+&gt; data.median
+5
+&gt; data.variance
+7.7190082644628095
+&gt; data.standard_deviation
+2.778310325442932
+&gt; data.percentile(70)
+6
+</code></pre>
+
+<h2>License</h2>
+
+<p>Copyright (c) 2012 Francois-Guillaume Ribreau (<a href="mailto:npm@fgribreau.com">npm@fgribreau.com</a>)</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/FGRibreau">FGRibreau</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA–1844157–4");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
