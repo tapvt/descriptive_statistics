@@ -34,6 +34,8 @@ Examples
 2.778310325442932
 > data.percentile(70)
 6
+> data.modes
+[ '2', '3', '6', '9' ]
 ```
 
 
