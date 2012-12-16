@@ -1,5 +1,8 @@
 {
   "author": "Francois-Guillaume Ribreau <npm@fgribreau.com> (http://twitter.com/FGRibreau)",
+  "contributors": [
+    {"name": "Ben Weller", "email": "ben.weller@me.com"}
+  ],
   "name": "descriptive-statistics",
   "description": "Descriptive statistics for server-side JavaScript",
   "keywords": ["statistics","stats"],
