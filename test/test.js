@@ -6,19 +6,56 @@ var csv = require('csv');
 module.exports = {
   setUp: function(callback) {
     this.data = [];
+    this.modeData = [];
 
     function toFloat(number){
       return parseFloat(number, 10);
     }
 
+
+    var self = this;
     csv()
     .fromPath(__dirname+'/testdata.csv')
     .on('data',function(data,index){
       this.data.push(data.map(toFloat));
     }.bind(this))
-    .on('end', callback.bind(null, null));
-  },
+    .on('end', function() {
 
+        csv()
+        .fromPath(__dirname+'/modetestdata.csv')
+        .on('data',function(data,index){
+          self.modeData.push(data);
+        }.bind(self))
+        .on('end', callback.bind(null, null));
+
+    });
+
+  },
+  test_modes: function(t) {
+
+    var assertionCount = function(modeData) {
+     var count = 0;
+       modeData.forEach(function(row) {
+        count += row.length - 8;
+       });
+       return count;
+    };
+
+    t.expect(assertionCount(this.modeData));
+
+    this.modeData.forEach(function(row){
+      var modes = row.slice(0, 8).modes;
+      if (modes.length === 1) {
+        t.equal(modes[0], row[8]);
+      } else if (modes.length === 2) {
+        modes = modes.sort();
+        t.equal(modes[0], row[8]);
+        t.equal(modes[1], row[9]);
+
+      }
+    });
+    t.done();
+  },
   test_sum: function(t){
     t.expect(this.data.length);
 
