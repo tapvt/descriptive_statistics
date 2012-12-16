@@ -36,6 +36,8 @@ Examples
 6
 > data.modes
 [ '2', '3', '6', '9' ]
+> data.range
+[ 1, 9]
 ```
 
 

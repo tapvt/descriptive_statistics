@@ -54,6 +54,21 @@ module.exports = {
     });
     t.done();
   },
+  test_range: function(t){
+    t.expect(this.data.length * 2);
+
+    this.data.forEach(function(row){
+      var range = function(row) {
+        row = row.sort(function(a,b){return a-b});
+        return [row[0], row[row.length-1]];
+      }
+      var testRange = range(row.slice(0,10));
+      var range = row.slice(0, 10).range;
+      t.equal(range[0], testRange[0]);
+      t.equal(range[1], testRange[1]);
+    });
+    t.done();
+  },
   test_sum: function(t){
     t.expect(this.data.length);
 
