@@ -33,10 +33,12 @@ module.exports = {
   },
   test_modes: function(t) {
 
+    var dataCols = 8;
+
     var assertionCount = function(modeData) {
      var count = 0;
        modeData.forEach(function(row) {
-        count += row.length - 8;
+        count += row.length - dataCols;
        });
        return count;
     };
@@ -44,14 +46,10 @@ module.exports = {
     t.expect(assertionCount(this.modeData));
 
     this.modeData.forEach(function(row){
-      var modes = row.slice(0, 8).modes;
-      if (modes.length === 1) {
-        t.equal(modes[0], row[8]);
-      } else if (modes.length === 2) {
-        modes = modes.sort();
-        t.equal(modes[0], row[8]);
-        t.equal(modes[1], row[9]);
-
+      var modes = row.slice(0, dataCols).modes;
+      modes = modes.sort();
+      for (var base = 0; base < row.length - dataCols; base++) {
+        t.equal(modes[base], row[base+dataCols]);
       }
     });
     t.done();
